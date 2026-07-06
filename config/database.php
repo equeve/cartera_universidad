@@ -5,7 +5,7 @@
 
 // Detecta las variables de entorno de Render; si no existen, usa tus datos locales por defecto
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
-define('DB_PORT', getenv('DB_PORT') ?: '5433'); // En Render/Neon se usará el puerto que pases por variable (usualmente 5432)
+define('DB_PORT', getenv('DB_PORT') ?: '5432'); // En Render/Neon se usará el puerto que pases por variable (usualmente 5432)
 define('DB_NAME', getenv('DB_NAME') ?: 'cartera_universidad');
 define('DB_USER', getenv('DB_USER') ?: 'postgres');
 define('DB_PASS', getenv('DB_PASSWORD') ?: '12345'); // Nota: cambiamos a DB_PASSWORD para que coincida con Render
